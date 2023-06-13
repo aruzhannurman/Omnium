@@ -1,9 +1,8 @@
 <div class="app">
   <header>
-   
-   <app-todos></app-todos>
-    <app-todos></app-todos>
-   
-   
+    <div *ngFor="let data of items">
+      <app-menu [hero]="data"></app-menu>
+    </div>
   </header>
 </div>
+]
