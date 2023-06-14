@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MenuItemModel } from './components/menu/models/MenuItemModel';
+import { MenuItem} from './components/menu/MenuItem';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,11 +7,11 @@ import { MenuItemModel } from './components/menu/models/MenuItemModel';
 })
 export class AppComponent {
   title = 'second';
+  constructor() {}
 
-  items: MenuItemModel[] = [
-    new MenuItemModel('Users1', './assets/link.png'),
-    new MenuItemModel('Users2', './assets/link.png'),
-    new MenuItemModel('Users3', './assets/link.png'),
+  items: MenuItem[] = [
+    new MenuItem('Users1', './assets/link.png'),
+    new MenuItem('Users2', './assets/link.png'),
+    new MenuItem('Users3', './assets/link.png'),
   ];
 }
-
