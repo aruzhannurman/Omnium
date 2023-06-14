@@ -7,7 +7,7 @@ import { Title } from '@angular/platform-browser';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],
 })
+
 export class MenuComponent {
   @Input() menuItems: MenuItem[];
-  constructor() {}
 }

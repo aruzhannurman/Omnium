@@ -5,6 +5,7 @@ import { MenuItem } from './components/menu/MenuItem';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
+
 export class AppComponent {
   title = 'second';
   constructor() {}
