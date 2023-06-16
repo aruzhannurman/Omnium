@@ -17,18 +17,18 @@
 
 }
 .one-pair-ti {
-  background-color: styles.$purple_background;
+  background-color: styles.$backgroundPurple;
   display: flex;
   flex-direction: row;
   line-height: 40px;
     font-size: 15px;
         align-items: center;
-        font-family: styles.$font-family;
-        color:styles.$color-text-gray;
+        font-family: styles.$fontFamily;
+        color:styles.$textGray;
         
 }
 .one-pair-ti:hover {
-  color: #ffffff;
+  color: styles.$white;
  
 
   //   transition: 0.7s;
