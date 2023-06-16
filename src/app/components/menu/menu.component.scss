@@ -1,0 +1,40 @@
+@use "../../../styles.scss";
+
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  flex-direction: column;
+  margin-right: 1rem;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+        box-sizing: border-box;
+        display: list-item;
+        font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    padding: 0;
+
+}
+.one-pair-ti {
+  background-color: styles.$purple_background;
+  display: flex;
+  flex-direction: row;
+  line-height: 40px;
+    font-size: 15px;
+        align-items: center;
+        font-family: styles.$font-family;
+        color:styles.$color-text-gray;
+        
+}
+.one-pair-ti:hover {
+  color: #ffffff;
+ 
+
+  //   transition: 0.7s;
+}
+.img {
+  height: 24px;
+  width: 24px;
+  padding-right: 0.5rem;
+}
