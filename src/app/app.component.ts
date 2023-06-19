@@ -11,8 +11,8 @@ export class AppComponent {
   constructor() {}
 
   items: MenuItem[] = [
-    new MenuItem('Users1', './assets/link.png'),
-    new MenuItem('Users2', './assets/link.png'),
-    new MenuItem('Users3', './assets/link.png'),
+    new MenuItem('Contacts', './assets/link.png','/contacts'),
+    new MenuItem('About', './assets/link.png','/about'),
+    new MenuItem('Users3', './assets/link.png',''),
   ];
 }
