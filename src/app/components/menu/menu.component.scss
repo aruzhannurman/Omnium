@@ -1,37 +1,102 @@
 @use "../../../styles.scss";
 
-.sidebar {
-  width: 250px;
-  height: 100vh;
-  flex-direction: column;
-  margin-right: 1rem;
-  border-radius: 0 10px 10px 0;
-  position: relative;
-  box-sizing: border-box;
-  display: list-item;
-  font-weight: 400;
-  line-height: 1.5;
-  margin-bottom: 2rem;
-  padding: 0;
+
+
+
+.menuIcon {
+  height: 20px;
+  width: 20px;
+  padding-right: 0.5rem;
+  margin-right: 0.5rem;
+
+  vertical-align: middle;
+    font-size: 24px;
+    display: inline-block;
+    line-height: normal;
+    position: relative;
+
+    font-weight: 400;
+    font-style: normal;
+    
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+          cursor: pointer;
 }
 
-.one-pair-ti {
-  background-color: styles.$backgroundPurple;
+.menuText {
   display: flex;
-  flex-direction: row;
+  align-items: center;
+
+  box-sizing: border-box;
+  color: #fff;
+  font-weight: 500;
   line-height: 40px;
   font-size: 15px;
-  align-items: center;
-  font-family: styles.$fontFamily;
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+  text-decoration: none;
   color: styles.$textGray;
 }
 
-.one-pair-ti:hover {
-  color: styles.$white;
+.menuIconText {
+  padding-right: 0.5rem;
+  font-weight: 500;
+  padding: 0 1.5rem;
+  display: flex;
+    align-items: center;
+    line-height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    color: styles.$textGray;
+}
+.menuIconText :hover{
+  color: white;
 }
 
-.img {
-  height: 24px;
-  width: 24px;
-  padding-right: 0.5rem;
+.sidebarMenu {
+  
+  margin-right: 1rem;
+    border-radius: 0 10px 10px 0;
+    position: relative;
+    overflow: hidden;
+    
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.sidebar {
+   
+  margin-bottom: 2rem;
+    padding: 0;
+    margin-top: 0;
+    display: block;
+    
+    // margin-block-start: 1em;
+    // margin-block-end: 1em;
+    // margin-inline-start: 0px;
+    // margin-inline-end: 0px;
+    // padding-inline-start: 40px;
+}
+.wholeSidebar{
+  padding-top: 2rem;
+  border-right: 1px solid rgba(0,0,0,.15);
+  box-shadow: 0 3px 3px -2px rgba(39,44,51,.1), 0 3px 4px 0 rgba(39,44,51,.04), 0 1px 8px 0 rgba(39,44,51,.02);
+    background: #303956;
+     position: relative;
+    height: 100%;
+    
+   
+    overscroll-behavior: none;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden !important;
+   
+   
+
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 256px;
 }
