@@ -10,7 +10,7 @@ import { ContentContactsComponent } from './components/contacts/content-contacts
 import { ContentAboutComponent } from './components/about/content-about/content-about.component';
 
 const appRoutes: Routes = [
-  { path: '', component: AppComponent },
+  { path: '', component: MenuComponent },
   { path: 'about', component: ContentAboutComponent },
   { path: 'contacts', component: ContentContactsComponent },
 ];

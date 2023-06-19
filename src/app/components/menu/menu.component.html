@@ -2,7 +2,7 @@
   <div *ngFor="let item of menuItems" class="one-pair-ti">
      <a [routerLink]="'{{item.link}} '">
       <img [src]="item.icon" class="img" />
-      <div>{{ item.title }}</div>
+      <p>{{ item.title }}</p>
      </a>
     
   </div>

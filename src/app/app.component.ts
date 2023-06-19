@@ -12,7 +12,7 @@ export class AppComponent {
 
   items: MenuItem[] = [
     new MenuItem('Contacts', './assets/link.png','/contacts'),
-    new MenuItem('About', './assets/link.png','/about'),
-    new MenuItem('Users3', './assets/link.png',''),
+    new MenuItem('About', './assets/link.png','about'),
+    new MenuItem('Users3', './assets/link.png','/'),
   ];
 }
