@@ -51,8 +51,13 @@
   color: white;
 }
 
-.menuIconText.active {
-  background-color: red;
+.menuIconText.active .menuIcon {
+  filter: invert(97%) sepia(0%) saturate(0%) hue-rotate(52deg) brightness(102%)
+    contrast(105%);
+}
+
+.menuIconText.active .menuText {
+  color: white;
 }
 
 .sidebarMenu {
