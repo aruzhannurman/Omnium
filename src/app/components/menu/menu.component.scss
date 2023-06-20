@@ -1,44 +1,25 @@
 @use "../../../styles.scss";
 
-
-
-
 .menuIcon {
   height: 20px;
   width: 20px;
   padding-right: 0.5rem;
   margin-right: 0.5rem;
-
-
-
+  filter: invert(45%) sepia(12%) saturate(360%) hue-rotate(177deg)
+    brightness(89%) contrast(82%);
   vertical-align: middle;
-    font-size: 24px;
-    display: inline-block;
-    line-height: normal;
-    position: relative;
-
-    font-weight: 400;
-    font-style: normal;
-    
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-          cursor: pointer;
-
-           filter: grayscale(100%);
-  transition: filter 0.3s ease;
+  font-size: 24px;
+  cursor: pointer;
 }
-.menuIcon:hover{
+
+.menuIcon:hover {
   filter: grayscale(0%);
 }
-
 
 .menuText {
   display: flex;
   align-items: center;
-
   box-sizing: border-box;
-  color: #fff;
   font-weight: 500;
   line-height: 40px;
   font-size: 15px;
@@ -53,63 +34,50 @@
   font-weight: 500;
   padding: 0 1.5rem;
   display: flex;
-    align-items: center;
-    line-height: 40px;
-    font-size: 15px;
-    cursor: pointer;
-    color: styles.$textGray;
+  align-items: center;
+  line-height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  color: styles.$textGray;
 }
-.menuIconText :hover{
+.menuIconText:hover .menuIcon,
+.menuIconText:active .menuIcon {
+  filter: invert(97%) sepia(0%) saturate(0%) hue-rotate(52deg) brightness(102%)
+    contrast(105%);
+}
+
+.menuIconText:hover .menuText,
+.menuIconText:active {
   color: white;
 }
 
+.menuIconText.active {
+  background-color: red;
+}
+
 .sidebarMenu {
-  
+  display: block;
   margin-right: 1rem;
-    border-radius: 0 10px 10px 0;
-    position: relative;
-    overflow: hidden;
-    
-    font-weight: 400;
-    line-height: 1.5;
-   
-}
-.sidebarMenu:hover{
-  filter: grayscale(100%);
+  border-radius: 0 10px 10px 0;
+  position: relative;
+  overflow: hidden;
+  font-weight: 400;
+  line-height: 1.5;
+  color: styles.$textGray;
 }
 
-.sidebar {
-   
-  margin-bottom: 2rem;
-    padding: 0;
-    margin-top: 0;
-    display: block;
-    
-    // margin-block-start: 1em;
-    // margin-block-end: 1em;
-    // margin-inline-start: 0px;
-    // margin-inline-end: 0px;
-    // padding-inline-start: 40px;
-}
-.wholeSidebar{
+.wholeSidebar {
   padding-top: 2rem;
-  border-right: 1px solid rgba(0,0,0,.15);
-  box-shadow: 0 3px 3px -2px rgba(39,44,51,.1), 0 3px 4px 0 rgba(39,44,51,.04), 0 1px 8px 0 rgba(39,44,51,.02);
-    background: #303956;
-     position: relative;
-    height: 100%;
-    
-   
-    overscroll-behavior: none;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden !important;
-   
-   
-
-
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 256px;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  background: #22242e;
+  position: relative;
+  height: 100%;
+  overscroll-behavior: none;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden !important;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 256px;
 }
