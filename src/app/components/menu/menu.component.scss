@@ -9,6 +9,8 @@
   padding-right: 0.5rem;
   margin-right: 0.5rem;
 
+
+
   vertical-align: middle;
     font-size: 24px;
     display: inline-block;
@@ -22,7 +24,14 @@
     word-wrap: normal;
     white-space: nowrap;
           cursor: pointer;
+
+           filter: grayscale(100%);
+  transition: filter 0.3s ease;
 }
+.menuIcon:hover{
+  filter: grayscale(0%);
+}
+
 
 .menuText {
   display: flex;
@@ -63,6 +72,10 @@
     
     font-weight: 400;
     line-height: 1.5;
+   
+}
+.sidebarMenu:hover{
+  filter: grayscale(100%);
 }
 
 .sidebar {
