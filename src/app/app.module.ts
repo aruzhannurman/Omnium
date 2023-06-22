@@ -15,8 +15,6 @@ const appRoutes: Routes = [
   { path: 'contacts', component: ContentContactsComponent },
 ];
 
-
-
 @NgModule({
   declarations: [
     AppComponent,
