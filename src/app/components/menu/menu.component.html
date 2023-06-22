@@ -1,9 +1,14 @@
-<div class="sidebar">
-  <div *ngFor="let item of menuItems" class="one-pair-ti">
-     <a [routerLink]="'{{item.link}} '">
-      <img [src]="item.icon" class="img" />
-      <p>{{ item.title }}</p>
-     </a>
-    
+
+<div class="wholeSidebar">
+  <div *ngFor="let item of menuItems" class="sidebarMenu">
+    <a
+     [routerLink]="'{{item.link}} '"
+      class="menuIconText"
+      [ngClass]="{ active: item.isActive }"
+      (click)="selectMenuItem(item)"
+    >
+      <img [src]="item.icon" class="menuIcon" />
+      <span class="menuText">{{ item.title }}</span>
+    </a>
   </div>
 </div>
