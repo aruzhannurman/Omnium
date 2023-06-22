@@ -10,10 +10,12 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { PaymentComponent } from './components/payment/payment.component';
 import { LessonsComponent } from './components/lessons/lessons.component';
 import { InfoComponent } from './components/info/info.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 const appRoutes: Routes = [
-  { path: '', component: AppComponent },
+  // { path: '', component: AppComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'lessons', component: LessonsComponent },
   { path: 'payment', component: PaymentComponent },
@@ -28,6 +30,8 @@ const appRoutes: Routes = [
     PaymentComponent,
     LessonsComponent,
     InfoComponent,
+    HeaderComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],
   providers: [],
