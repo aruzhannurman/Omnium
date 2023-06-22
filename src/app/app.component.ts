@@ -5,14 +5,13 @@ import { MenuItem } from './components/menu/MenuItem';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-
 export class AppComponent {
   title = 'second';
   constructor() {}
 
   items: MenuItem[] = [
-    new MenuItem('Users1', './assets/link.png'),
-    new MenuItem('Users2', './assets/link.png'),
-    new MenuItem('Users3', './assets/link.png'),
+    new MenuItem('Browse Courses', './assets/home.svg', false),
+    new MenuItem('About', './assets/link.png', false),
+    new MenuItem('Browse Paths', './assets/link.png', false),
   ];
 }

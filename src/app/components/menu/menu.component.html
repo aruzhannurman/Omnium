@@ -1,6 +1,12 @@
-<div class="sidebar">
-  <div *ngFor="let item of menuItems" class="one-pair-ti">
-    <img [src]="item.icon" class="img" />
-    <div>{{ item.title }}</div>
+<div class="wholeSidebar">
+  <div *ngFor="let item of menuItems" class="sidebarMenu">
+    <a
+      class="menuIconText"
+      [ngClass]="{ active: item.isActive }"
+      (click)="selectMenuItem(item)"
+    >
+      <img [src]="item.icon" class="menuIcon" />
+      <span class="menuText">{{ item.title }}</span>
+    </a>
   </div>
 </div>
