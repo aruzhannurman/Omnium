@@ -1,8 +1,7 @@
-
 <div class="wholeSidebar">
   <div *ngFor="let item of menuItems" class="sidebarMenu">
     <a
-     [routerLink]="'{{item.link}} '"
+      [routerLink]="item.link"
       class="menuIconText"
       [ngClass]="{ active: item.isActive }"
       (click)="selectMenuItem(item)"

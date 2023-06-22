@@ -9,6 +9,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { ContentContactsComponent } from './components/contacts/content-contacts/content-contacts.component';
 import { ContentAboutComponent } from './components/about/content-about/content-about.component';
 
+
 const appRoutes: Routes = [
   { path: '', component: MenuComponent },
   { path: 'about', component: ContentAboutComponent },
