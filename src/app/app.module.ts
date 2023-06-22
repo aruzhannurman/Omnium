@@ -6,22 +6,28 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { ContentContactsComponent } from './components/contacts/content-contacts/content-contacts.component';
-import { ContentAboutComponent } from './components/about/content-about/content-about.component';
+import { ProfileComponent } from './components/profile/profile.component';
+import { PaymentComponent } from './components/payment/payment.component';
+import { LessonsComponent } from './components/lessons/lessons.component';
+import { InfoComponent } from './components/info/info.component';
 
 
 const appRoutes: Routes = [
-  { path: '', component: MenuComponent },
-  { path: 'about', component: ContentAboutComponent },
-  { path: 'contacts', component: ContentContactsComponent },
+  { path: '', component: AppComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: 'lessons', component: LessonsComponent },
+  { path: 'payment', component: PaymentComponent },
+  { path: 'info', component: InfoComponent },
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
-    ContentContactsComponent,
-    ContentAboutComponent,
+    ProfileComponent,
+    PaymentComponent,
+    LessonsComponent,
+    InfoComponent,
   ],
   imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes)],
   providers: [],
