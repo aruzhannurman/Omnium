@@ -41,6 +41,7 @@
   cursor: pointer;
   color: styles.$textGray;
 }
+
 .menuIconText:hover .menuIcon,
 .menuIconText:active .menuIcon {
   filter: invert(97%) sepia(0%) saturate(0%) hue-rotate(52deg) brightness(102%)
@@ -85,6 +86,4 @@
   position: fixed;
   top: 0;
   bottom: 0;
-   width: 256px;
-  //width:18%;
 }
