@@ -1,14 +1,11 @@
 @use "../../../styles.scss";
 
 .menuIcon {
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   padding-right: 0.5rem;
-  margin-right: 0.5rem;
   filter: invert(45%) sepia(12%) saturate(360%) hue-rotate(177deg)
     brightness(89%) contrast(82%);
-  vertical-align: middle;
-  font-size: 24px;
   cursor: pointer;
 }
 
@@ -19,7 +16,6 @@
 .menuText {
   display: flex;
   align-items: center;
-  box-sizing: border-box;
   font-weight: 500;
   line-height: 40px;
   font-size: 15px;
@@ -30,6 +26,7 @@
 }
 
 .menuIconText {
+  text-decoration: none;
   padding-right: 0.5rem;
   font-weight: 500;
   padding: 0 1.5rem;
@@ -40,6 +37,7 @@
   cursor: pointer;
   color: styles.$textGray;
 }
+
 .menuIconText:hover .menuIcon,
 .menuIconText:active .menuIcon {
   filter: invert(97%) sepia(0%) saturate(0%) hue-rotate(52deg) brightness(102%)
@@ -74,15 +72,12 @@
 .wholeSidebar {
   padding-top: 2rem;
   border-right: 1px solid rgba(0, 0, 0, 0.15);
-  background: #22242e;
-  position: relative;
-  height: 100%;
+  background:#21252e;
+border: black;
   overscroll-behavior: none;
   display: flex;
   flex-direction: column;
-  overflow: hidden !important;
-  position: fixed;
   top: 0;
   bottom: 0;
-  width: 256px;
+  box-sizing: border-box;
 }

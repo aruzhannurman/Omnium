@@ -1,9 +1,37 @@
-$fonts:  sans-serif;
-$spacing: 0;
-* {
-    font-family: $fonts;
-    padding: $spacing;
-    
-    margin:0;
-    box-sizing: border-box;
+// .app {
+//   height: 100vh;
+//   width: 100vw;
+//   display: flex;
+// }
+
+// .containerSidebar {
+//   width: 20%;
+// }
+
+// .containerHeaderFooter {
+//   width: 80%;
+//   display: flex;
+//   flex-direction: column;
+
+//   position: relative;
+// }
+// .header {
+//   height: 60px;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+// }
+
+// @media (min-width: 768px) {
+//       #sidebar-container {
+//           width: 235px; /* Responsive width for desktop */
+//       }
+//   }
+
+
+.footer{
+  display: block;
+  justify-content: center;
+ 
 }

@@ -10,8 +10,9 @@ export class AppComponent {
   constructor() {}
 
   items: MenuItem[] = [
-    new MenuItem('Browse Courses', './assets/home.svg', false),
-    new MenuItem('About', './assets/link.png', false),
-    new MenuItem('Browse Paths', './assets/link.png', false),
+    new MenuItem('Мой профиль', './assets/1.png', true, '/profile'),
+    new MenuItem('Платежи', './assets/2.png', false, '/payment'),
+    new MenuItem('Уроки', './assets/4.png', false, '/lessons'),
+    new MenuItem('Инфомер', './assets/3.png', false, '/info'),
   ];
 }
