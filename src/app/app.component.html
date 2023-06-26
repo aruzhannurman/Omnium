@@ -1,53 +1,39 @@
-<!-- <div class="app">
-  <div class="containerSidebar">
-    <app-menu class="menu" [menuItems]="items"></app-menu>
-  </div>
-
-  <div class="containerHeaderFooter">
-    <app-header class="header"></app-header>
-    <app-footer class="footer"></app-footer>
-    <router-outlet class="content"></router-outlet>
-  </div>
-</div> -->
-
- <!-- <div fxLayout="row" style="height:max-content; width: 100vw">
-  <div fxFlex="19"  style="background-color: lightblue">
-    <app-menu class="menu" [menuItems]="items" style="position: absolute; top: 0; bottom: 0;width: fit-content; "></app-menu>
-  </div>
-  <div fxFlex="81" fxLayout="column" style="position: relative">
-    <app-header style="background-color: #1d1e27; height: 60px"></app-header>
-    <router-outlet class="content"></router-outlet>
-
-    <app-footer
+<div
+  style="
+    display: grid;
+    grid-template-columns: 19% 81%;
+    height: 100vh;
+    width: 100vw;
+  "
+>
+  <div style="background-color: #21252e">
+    <app-menu
+      class="menu"
+      [menuItems]="items"
       style="
-       
-        height: 60px;
+        display: flex;
+        flex-direction: column;
+        position: sticky;
+        top: 0;
+        bottom: 0;
+      "
+    >
+    </app-menu>
+  </div>
+  <div style="display: flex; flex-direction: column; position: relative">
+    <app-header></app-header>
+    <router-outlet class="content"></router-outlet>
+    <app-footer
+      class="footer"
+      style="
+        background-color: #1c1d26;
+        height: max-content;
         position: absolute;
         bottom: 0;
         left: 0;
         right: 0;
       "
+      >Footer</app-footer
     >
-      
-    </app-footer>
-  </div>
-</div>  -->
-
-
-
-<div style="display: grid; grid-template-columns: 19% 81%; height: 100vh;width:100vw">
-  <div style="background-color: #21252e;">
-    <app-menu  class="menu" [menuItems]="items" style="display: flex; flex-direction: column; position: sticky; top: 0; bottom: 0;">
-      
-    </app-menu>
-  </div>
-  <div style="display: flex; flex-direction: column; position: relative;">
-    <app-header ></app-header>
-    <router-outlet class="content"></router-outlet>
-    <app-footer class="footer" style=" background-color: #1c1d26; height: max-content; position: absolute; bottom: 0; left: 0; right: 0;">Footer</app-footer>
   </div>
 </div>
-
-
-
-

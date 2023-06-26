@@ -13,7 +13,6 @@ import { InfoComponent } from './components/info/info.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 
-
 const appRoutes: Routes = [
   // { path: '', component: AppComponent },
   { path: 'profile', component: ProfileComponent },
@@ -33,7 +32,12 @@ const appRoutes: Routes = [
     HeaderComponent,
     FooterComponent,
   ],
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes),FlexLayoutModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(appRoutes),
+    FlexLayoutModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
   // { path:  'contacts', component:  ContactListComponent}
