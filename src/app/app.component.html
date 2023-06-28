@@ -23,7 +23,8 @@
   </div>
 </div> -->
 
-
+<!-- _______________________ -->
+<!-- <div>
 <div style="display: grid; grid-template-columns: 19% 81%; height: 100vh; width: 100vw;">
   <div style="background-color: #21252e; flex-direction: column; position: relative;">
     <div class="menuUserWrapper">
@@ -39,5 +40,24 @@
     <app-footer class="footer"></app-footer>
   </div>
 </div>
+</div> -->
 
-
+<div class="wholeScreen">
+  <div fxLayout="row" style="flex: 1">
+    <div class="wholeMenuUserWrapper">
+      <div class="menuUserWrapper">
+        <app-menu-user class="menuUser"></app-menu-user>
+      </div>
+      <div class="menuWrapper">
+        <app-menu class="menu" [menuItems]="items"></app-menu>
+      </div>
+    </div>
+    <div class="mainBody">
+      <app-header></app-header>
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+      <app-footer class="footer"></app-footer>
+    </div>
+  </div>
+</div>
