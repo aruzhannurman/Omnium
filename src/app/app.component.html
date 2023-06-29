@@ -2,7 +2,9 @@
   <div fxLayout="row" style="flex: 1">
     <div class="wholeMenuUserWrapper">
       <div class="menuUserWrapper">
-        <app-menu-user class="menuUser"></app-menu-user>
+        <app-menu-user  [profilePhoto]="profilePhoto"
+  [name]="name"
+  [role]="role" class="menuUser"></app-menu-user>
       </div>
       <div class="menuWrapper">
         <app-menu class="menu" [menuItems]="items"></app-menu>
