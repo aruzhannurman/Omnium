@@ -1,7 +1,20 @@
 .header {
+     
+        
   height: 60px; /* Example height for the header */
   background-color: #1c1d26;
 
   border-bottom: 2px solid #1a191a !important;
   color: white;
+}
+img{
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+      width: 180px;
+    height: 40px;
+    object-fit: fill;
+     display: flex;
+      filter: invert(45%) sepia(12%) saturate(360%) hue-rotate(177deg)
+    brightness(89%) contrast(82%);
+
 }

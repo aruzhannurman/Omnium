@@ -15,4 +15,8 @@ export class AppComponent {
     new MenuItem('Уроки', './assets/sidebar/4.png', false, '/lessons'),
     new MenuItem('Инфомер', './assets/sidebar/3.png', false, '/info'),
   ];
+
+  profilePhoto: string = 'assets/sidebarUser/profilePic.png';
+  name: string = 'Luma';
+  role: string = 'Student';
 }
