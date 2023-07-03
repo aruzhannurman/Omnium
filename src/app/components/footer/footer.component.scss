@@ -11,8 +11,11 @@
   font-family: Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol;
   text-decoration: none;
+  background-color: transparent;
 
-  border-top: 2px solid #1a191a !important;
+   border-top: 2px solid #1a191a !important;
+   box-shadow: #1a191a ;
+   padding-bottom: 1.5rem;
 }
 
 .footer h1 {
@@ -39,4 +42,5 @@
   margin-bottom: 1rem;
   text-align: left;
   max-width: 616px;
+  
 }
