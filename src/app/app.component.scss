@@ -1,3 +1,5 @@
+@use './../styles.scss';
+
 .wholeScreen {
   display: flex;
   flex-direction: column;
@@ -7,7 +9,7 @@
 }
 
 .wholeMenuUserWrapper {
-  background-color: #22242e;
+  background-color: styles.$backgroundSidebar;
   width: 19%;
   display: flex;
   flex-direction: column;
@@ -28,13 +30,14 @@
   flex-direction: column;
   flex: 1;
 }
+
 .content {
   flex: 1;
   overflow-y: auto;
-  background-color: #1c1d26;
+  background-color: styles.$backgroundMain;
 }
 
 .footer {
-  background-color: #1c1d26 ;
+  background-color: styles.$backgroundMain ;
 }
 
