@@ -26,7 +26,7 @@
   overflow-y: auto;
 }
 
-.mainBody {
+.mainWrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -46,4 +46,8 @@
   background-color: styles.$backgroundMain;
   width: 100%;
   height: 100%;
+}
+
+.wholeScreenInside {
+  flex: 1;
 }

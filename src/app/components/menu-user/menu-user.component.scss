@@ -1,7 +1,9 @@
+@use './../../../styles.scss';
+
 .wholeUserProfile {
   padding-top: 2rem;
   border-right: 1px solid rgba(0, 0, 0, 0.15);
-  background: transparent;
+  background: styles.$backgroundSidebar;
   border: black;
   overscroll-behavior: none;
   flex-direction: column;
@@ -11,7 +13,7 @@
 }
 
 .picture {
-  background-color: #dbdceb ;
+  background-color:styles.$sidebarPicColor;
   border-radius: 0.25rem ;
   display: flex;
   align-items: center;

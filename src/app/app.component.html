@@ -1,5 +1,5 @@
 <div class="wholeScreen">
-  <div fxLayout="row" style="flex: 1">
+  <div fxLayout="row" class="wholeScreenInside">
     <div class="wholeMenuUserWrapper">
       <div class="menuUserWrapper">
         <app-menu-user
@@ -13,7 +13,7 @@
         <app-menu class="menu" [menuItems]="items"></app-menu>
       </div>
     </div>
-    <div class="mainBody">
+    <div class="mainWrapper">
       <app-header></app-header>
       <div class="content">
         <div class="insideContent"><router-outlet></router-outlet></div>
