@@ -2,9 +2,12 @@
   <div fxLayout="row" style="flex: 1">
     <div class="wholeMenuUserWrapper">
       <div class="menuUserWrapper">
-        <app-menu-user  [profilePhoto]="profilePhoto"
-  [name]="name"
-  [role]="role" class="menuUser"></app-menu-user>
+        <app-menu-user
+          [profilePhoto]="profilePhoto"
+          [name]="name"
+          [role]="role"
+          class="menuUser"
+        ></app-menu-user>
       </div>
       <div class="menuWrapper">
         <app-menu class="menu" [menuItems]="items"></app-menu>
@@ -13,9 +16,9 @@
     <div class="mainBody">
       <app-header></app-header>
       <div class="content">
-        <router-outlet >
-          <div class="insideContent"></div>
-        </router-outlet>
+        <div class="insideContent">
+          <router-outlet></router-outlet>
+        </div>
       </div>
       <app-footer class="footer"></app-footer>
     </div>
