@@ -6,12 +6,13 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { ProfileComponent } from './components/profile/profile.component';
-import { PaymentComponent } from './components/payment/payment.component';
-import { LessonsComponent } from './components/lessons/lessons.component';
-import { InfoComponent } from './components/info/info.component';
+import { ProfileComponent } from './components/content-profile/content-profile.component';
+import { PaymentComponent } from './components/content-payment/content-payment.component';
+import { LessonsComponent } from './components/content-lessons/content-lessons.component';
+import { InfoComponent } from './components/content-dashboard/content-dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { MenuUserComponent } from './components/menu-user/menu-user.component';
 
 const appRoutes: Routes = [
   // { path: '', component: AppComponent },
@@ -31,6 +32,7 @@ const appRoutes: Routes = [
     InfoComponent,
     HeaderComponent,
     FooterComponent,
+    MenuUserComponent,
   ],
   imports: [
     BrowserModule,
@@ -40,6 +42,5 @@ const appRoutes: Routes = [
   ],
   providers: [],
   bootstrap: [AppComponent],
-  // { path:  'contacts', component:  ContactListComponent}
 })
 export class AppModule {}

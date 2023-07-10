@@ -1,39 +1,24 @@
-<div
-  style="
-    display: grid;
-    grid-template-columns: 19% 81%;
-    height: 100vh;
-    width: 100vw;
-  "
->
-  <div style="background-color: #21252e">
-    <app-menu
-      class="menu"
-      [menuItems]="items"
-      style="
-        display: flex;
-        flex-direction: column;
-        position: sticky;
-        top: 0;
-        bottom: 0;
-      "
-    >
-    </app-menu>
-  </div>
-  <div style="display: flex; flex-direction: column; position: relative">
-    <app-header></app-header>
-    <router-outlet class="content"></router-outlet>
-    <app-footer
-      class="footer"
-      style="
-        background-color: #1c1d26;
-        height: max-content;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-      "
-      >Footer</app-footer
-    >
+<div class="wholeScreen">
+  <div fxLayout="row" class="wholeScreenInside">
+    <div class="wholeMenuUserWrapper">
+      <div class="menuUserWrapper">
+        <app-menu-user
+          [profilePhoto]="profilePhoto"
+          [name]="name"
+          [role]="role"
+          class="menuUser"
+        ></app-menu-user>
+      </div>
+      <div class="menuWrapper">
+        <app-menu class="menu" [menuItems]="items"></app-menu>
+      </div>
+    </div>
+    <div class="mainWrapper">
+      <app-header></app-header>
+      <div class="content">
+        <div class="insideContent"><router-outlet></router-outlet></div>
+      </div>
+      <app-footer class="footer"></app-footer>
+    </div>
   </div>
 </div>

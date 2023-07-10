@@ -1,7 +1,18 @@
+@use "./../../../styles.scss";
+
 .header {
   height: 60px; /* Example height for the header */
-  background-color: #1c1d26;
-
-  border-bottom: 2px solid #1a191a !important;
+  background-color: styles.$backgroundMain;
   color: white;
+}
+
+img {
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  width: 180px;
+  height: 40px;
+  object-fit: fill;
+  display: flex;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg)
+    brightness(102%) contrast(102%);
 }

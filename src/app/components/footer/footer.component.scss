@@ -3,16 +3,14 @@
 .footer {
   color: #757982;
   align-items: center;
-
   font-weight: normal;
   line-height: 30px;
   font-size: 12px;
-
   font-family: Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji,
     Segoe UI Emoji, Segoe UI Symbol;
   text-decoration: none;
-
-  border-top: 2px solid #1a191a !important;
+  background-color: styles.$backgroundMain;
+  padding-bottom: 1.5rem;
 }
 
 .footer h1 {
@@ -23,17 +21,19 @@
   display: flex;
   align-items: center;
   line-height: 1.231;
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1.5rem;
   text-align: left;
 }
+
 .footer h4 {
   margin-left: 50px;
   margin-right: 50px;
 }
+
 .footer p {
   margin-left: 50px;
   line-height: 1.5;
-  margin-right: 0.5rem !important;
+  margin-right: 0.5rem;
   font-size: 0.8125rem;
   font-weight: 400;
   margin-bottom: 1rem;

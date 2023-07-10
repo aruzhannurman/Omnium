@@ -1,0 +1,79 @@
+@use './../../../styles.scss';
+
+.wholeUserProfile {
+  padding-top: 2rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  background: styles.$backgroundSidebar;
+  border: black;
+  overscroll-behavior: none;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+.picture {
+  background-color:styles.$sidebarPicColor;
+  border-radius: 0.25rem ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  padding: 0.25rem;
+  border-style: none;
+}
+
+.ig {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wholePic {
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 2.5rem 0;
+  height: auto;
+  line-height: 2rem;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 1.625rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  text-align: initial;
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+}
+
+.name {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 2rem;
+  font-weight: 500;
+  font-size: 1.625rem;
+  text-align: initial;
+  font-family: Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+  color: #fff;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+.role {
+  color: #8a9199;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: Exo\2, Helvetica Neue, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+}

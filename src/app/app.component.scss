@@ -1,4 +1,53 @@
+@use "./../styles.scss";
+
+.wholeScreen {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+}
+
+.wholeMenuUserWrapper {
+  background-color: styles.$backgroundSidebar;
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menuUserWrapper {
+  position: sticky;
+  top: 0;
+}
+
+.menuWrapper {
+  position: fixed;
+  top: 17rem;
+  overflow-y: auto;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content {
+  flex: 1;
+  padding: 2px 0px;
+  background-color: styles.$borderColor;
+}
+
 .footer {
-  display: block;
-  justify-content: center;
+  background-color: styles.$backgroundMain;
+}
+
+.insideContent {
+  background-color: styles.$backgroundMain;
+  width: 100%;
+  height: 100%;
+}
+
+.wholeScreenInside {
+  flex: 1;
 }
