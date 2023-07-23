@@ -1,43 +1,65 @@
-<div>
+<!-- <div>
   <div class="cardDashboard">
     <div class="paddingLayer">
-        <div class="titleCheckBox">
-            <p class="title">Swift</p>
-            <!-- <input class="check" type="checkbox"> -->
-            <div class="checkbox-wrapper-39">
-  <label>
-    <input type="checkbox"/>
-    <span class="checkbox"></span>
-  </label>
-</div>
-          
+      <div class="titleCheckBox">
+        <p class="title">{{ getLimitedTitle() }}</p>
+   
+        <div class="checkbox-wrapper-39">
+          <label>
+            <input type="checkbox" />
+            <span class="checkbox"></span>
+          </label>
         </div>
+      </div>
       <p class="description">
-        Swift is a powerful and intuitive programming language for macOS, iOS,
-        watchOS, tvOS and beyond.
+         {{ getLimitedDescription() }}
       </p>
       <div class="lowerPart">
         <div class="left">
-            <div class="imgTitle">
-                <img src="../../../assets/dashboard/icon1.png" alt="no img">
-                <p>
-                  <small>6 hours</small></p>
-            </div>
-            <div class="imgTitle">
-                <img src="../../../assets/dashboard/icon1.png" alt="no img">
-                <p>12 lessons</p>
-            </div>
-            <div class="imgTitle">
-                <img src="../../../assets/dashboard/icon1.png" alt="no img">
-                <p>Beginner</p>
-            </div>
+          <div class="imgTitle">
+            <img src="../../../assets/dashboard/icon1.png" alt="no img" />
+            <p>
+              <small>6 hours</small>
+            </p>
+          </div>
+          <div class="imgTitle">
+            <img src="../../../assets/dashboard/icon1.png" alt="no img" />
+            <p>12 lessons</p>
+          </div>
+          <div class="imgTitle">
+            <img src="../../../assets/dashboard/icon1.png" alt="no img" />
+            <p>Beginner</p>
+          </div>
         </div>
         <div class="right">
           <div class="buttonArea">
-              <div class="button">Open</div>
+            <div class="button">Open</div>
           </div>
-          
         </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+<div class="cardDashboard">
+  <div class="paddingLayer">
+    <div class="titleCheckBox">
+      <p class="title">{{ getLimitedTitle() }}</p>
+      <div class="checkbox-wrapper-39">
+        <label>
+          <input type="checkbox" />
+          <span class="checkbox"></span>
+        </label>
+      </div>
+    </div>
+    <p class="description">
+      {{ getLimitedDescription() }}
+    </p>
+    <div class="lowerPart">
+      <div class="buttonArea">
+        <div class="button" (click)="openDialog()">Open</div>
       </div>
     </div>
   </div>
